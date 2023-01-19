@@ -1,0 +1,152 @@
+*{
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+    background-color: black;
+}
+p, h2, h1, h3{
+    font-family: 'Spoqa Han Sans';
+    color: white;
+}
+#container{
+    margin: 0 auto;
+    width: 100%;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+#main{
+    clear:both;
+    width: 100%;
+    height: 300px;
+}
+#logo{
+    float:left;
+    width: 250px;
+    height: 100px;
+}
+#logo>img{
+    margin-top: 22px;
+    margin-right: 5px;
+    margin-left: 10px;
+    float: left;
+    width: 50px;
+}
+#logo_text{
+    font-family: 'Spoqa Han Sans';
+    margin-left: 30px;
+    line-height: 26px;
+    font-size: 2.5em;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+nav{
+    float: right;
+    height: 100px;
+    width: 600px;
+
+}
+#topMenu{
+    padding-top: 15px;
+    list-style-type: none;
+    padding-left: 110px;
+}
+#topMenu>li{
+    float: left;
+}
+#topMenu>li>a{
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-size: 1.7em;
+    display: block;
+    margin-left: 60px;
+    color: white;
+    text-decoration: none;
+}
+#logo>a{
+    float: left;
+}
+#main>p{
+    color: white;
+    text-align: center;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+#main_ko{
+    font-size: 2em;
+    font-weight: 300;
+    color: rgb(139, 137, 137) !important;
+    line-height: 5px;
+    margin: 16px;
+    margin-top: 150px;
+}
+#main_en{
+    font-size: 5em;
+    font-weight: bold;
+    line-height: 10px;
+    margin: 50px;
+}
+#main>img{
+    width: 1200px;
+    padding-top: 200px;
+    display: block;
+    margin: auto;
+
+}
+#about{
+    text-align: center;
+}
+h1{
+    margin-top: 90px;
+    font-size: 60px;
+    line-height: 10px;
+}
+#intro{
+    color: rgb(163, 163, 163);
+    font-size: 1.5em;
+}
+h2{
+    clear: both;
+    font-size: 40px;
+}
+#about>ul{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#member>li{
+    float:left;
+    margin: 40px;
+}
+h3{
+    margin-top: 0;
+    font-size: 30px;
+}
+#member>li>p{
+    font-size: 16px;
+    line-height: 5px;
+    font-weight: 700;
+    color: rgb(154, 154, 154);
+}
+#people{
+    width: 130px;
+}
+#level{
+    color: white !important;
+    font-size: 20px !important;
+}
+#study{
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 30px;
+    padding-top: 40px;
+    border: solid 1px #007AFF;
+    border-radius: 40px;
+    box-sizing: border-box;
+    width: 900px;
+    height: 200px;
+    background-color: #007AFF;
+    margin-left: auto;
+    margin-right: auto;
+}
