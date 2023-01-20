@@ -49,7 +49,9 @@ header{
     font-weight: 700;
     text-decoration: none;
 }
-
+#logo>a{
+    text-decoration: none;
+}
 
 #topMenu{
     padding-top: 15px;
