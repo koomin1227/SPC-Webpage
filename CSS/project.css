@@ -1,63 +1,76 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    background-color: black;
-}
-
-p, h2, h1, h3{
-    font-family: 'Spoqa Han Sans';
-    color: white;
 }
 
 header{
     width: 100%;
     height: 100px;
+    position: fixed;
+    top: 0px;
     background-color: black;
 }
-
+#logo{
+    float: left;
+    width: 250px;
+    height: 100px;
+    background-color: black;
+}
 nav{
     float: right;
+    width: 500px;
     height: 100px;
-    width: 600px;
+    background-color: black;
+}
+#main{
+    padding: 0 auto;
+    clear: both;
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(37, 36, 36);
+}
+/* 레이아웃 */
+p, h2, h1, h3,a{
+    font-family: 'Spoqa Han Sans';
+    color: white;
 }
 
-#logo{
-    float:left;
+#logo>a{
     width: 250px;
     height: 100px;
 }
-
-#logo img{
-    margin-top: 26px;
-    margin-right: 5px;
-    margin-left: 10px;
+#logo>a>img{
     float: left;
-    width: 50px;
+    margin-left: 10px;
+    margin-top: 7px;
 }
-
-#logo_text{
-    font-family: 'Spoqa Han Sans';
-    margin-left: 30px;
-    line-height: 26px;
+#logo>a>h1{
+    float: left;
+    margin: 0px;
+    line-height: 80%;
+    padding-top: 38px;
+    padding-left: 10px;
     font-size: 2.5em;
-    color: white;
     font-weight: 700;
-    text-decoration: none;
-}
-#logo>a{
     text-decoration: none;
 }
 
 #topMenu{
-    padding-top: 15px;
+    height: 100px;
+    padding-top: 33px;
+    padding-bottom: 33px;
     list-style-type: none;
-    padding-left: 110px;
 }
-
 #topMenu>li{
     float: left;
 }
-
-#topMenu > li > a{
+#topMenu>li>a{
     font-family: 'Spoqa Han Sans Neo', 'sans-serif';
     font-size: 1.7em;
     display: block;
@@ -66,4 +79,30 @@ nav{
     text-decoration: none;
 }
 
-/* End Navigation */
+#footer_info>ul{
+    list-style-type: none;
+}
+#footer_info>ul>li{
+    margin-top: 36px;
+    border-right: solid 1px white;
+    float: left;
+    padding-right: 10px;
+    margin-left: 10px;
+}
+#footer_li{
+    margin-left: 50px !important;
+}
+#footer_info>ul>li>p{
+    font-size: 12px;
+}
+footer>p{
+    clear: left;
+    font-size: 11px;
+    margin: 0;
+    margin-left: 80px;
+    color: gray;
+}
+
+#main>h1{
+    padding-top: 100px;
+}
