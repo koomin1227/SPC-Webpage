@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main{
+    padding: 0 auto;
+    padding-top: 100px;
+    clear: both;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+#main_ko{
+    margin-top: 80px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 400;
+    color: rgb(139, 137, 137);
+}
+#main_ko:hover{
+    font-size: 2.5em;
+}
+#main_en{
+    text-align: center;
+    font-size: 5em;
+    font-weight: bold;
+}
+#main>img{
+    width: 800px;
+    display: block;
+    margin: auto;
+    padding-top: 30px;
+    /* position: absolute; */
+    bottom: 0;
+}
+#about{
+    width: 100%;
+    height: 900px;
+    background-color:darkblue;
+}

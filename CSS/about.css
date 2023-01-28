@@ -1,116 +1,49 @@
 *{
-    /* margin: 0;
-    padding: 0; */
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    background-color: black;
 }
-
-p, h2, h1, h3{
-    font-family: 'Spoqa Han Sans';
-    color: white;
-}
-
-header{
-    width: 100%;
-    height: 100px;
-    background-color: black;
-}
-
-nav{
-    float: right;
-    height: 100px;
-    width: 600px;
-}
-
-#logo{
-    float:left;
-    width: 250px;
-    height: 100px;
-}
-
-#logo img{
-    margin-top: 26px;
-    margin-right: 5px;
-    margin-left: 10px;
-    float: left;
-    width: 50px;
-}
-
-#logo_text{
-    font-family: 'Spoqa Han Sans';
-    margin-left: 30px;
-    line-height: 26px;
-    font-size: 2.5em;
-    color: white;
-    font-weight: 700;
-    text-decoration: none;
-}
-#logo>a{
-    text-decoration: none;
-}
-
-#topMenu{
-    padding-top: 15px;
-    list-style-type: none;
-    padding-left: 110px;
-}
-
-#topMenu>li{
-    float: left;
-}
-
-#topMenu>li>a{
-    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
-    font-size: 1.7em;
-    display: block;
-    margin-left: 60px;
-    color: white;
-    text-decoration: none;
-}
-
-/* End Navigation */
 
 #about{
+    padding: 0 auto;
+    clear: both;
+    width: 100%;
+    
+    background-color: black;
+}
+#intro_category{
+    padding-top: 100px;
+}
+#intro_category>h1{
+    padding-top: 100px;
+    font-size: 60px;
     text-align: center;
 }
-
-h1{
-    margin-top: 90px;
-    font-size: 60px;
-    line-height: 10px;
-}
-
-#intro_category{
-    margin-bottom: 200px;
-}
-
 #intro{
     color: rgb(163, 163, 163);
     font-size: 1.5em;
+    text-align: center;
 }
-
-h2{
-    clear: both;
+#members_category{
+    width : 100%;
+    height : 500px;
+    margin-top: 100px;
+}
+#members_category>h2{
+    text-align: center;
     font-size: 40px;
 }
-
-#members_category{
-    width : 1200px;
-    height : 500px;
-    margin : auto;
-    margin-bottom : 200px;
-}
-
 #members{
     text-align: center;
-    border-top: 1px solid #fff;
+    /* border-top: 1px solid #fff; */
 }
-
+#people{
+    width: 130px;
+}
 #members > li{
     display : inline-block;
     margin : 40px;
 }
-
 #members > li > div{
     height : 170px;
 }
@@ -119,22 +52,24 @@ h2{
     margin-top: 0;
     font-size: 30px;
 }
-
-#members > li > p{
-    font-size: 16px;
-    line-height: 18px;
-    color: rgb(154, 154, 154);
-}
-
-#people{
-    width: 130px;
-}
-
 #level{
     color: white !important;
     font-size: 20px !important;
+    margin-bottom: 10px;
 }
-
+#members > li > p{
+    font-size: 16px;
+    
+    color: rgb(154, 154, 154);
+}
+#method_category{
+    text-align: center;
+    height: 300px;
+}
+#method_category>h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
 #study{
     font-size: 18px;
     line-height: 30px;
