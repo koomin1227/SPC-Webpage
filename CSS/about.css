@@ -185,7 +185,25 @@
     background-color: white;
     top: 206px;
     border-radius: 50px;
-    opacity: 1;
+    display: none;
+}
+#detail_jm{
+    position: absolute;
+    width: 1200px;
+    height: 500px;
+    background-color: white;
+    top: 206px;
+    border-radius: 50px;
+    display: none;
+}
+#detail_js{
+    position: absolute;
+    width: 1200px;
+    height: 500px;
+    background-color: white;
+    top: 206px;
+    border-radius: 50px;
+    display: none;
 }
 #profile{
     float: left;
@@ -284,35 +302,87 @@
     height: 500px;
 
     padding: 20px 60px;
+    padding-right: 0px;
 }
 #tech>h2{
+    float: left;
     text-align: center;
     color: black;
     font-size: 40px;
     margin-top: 5px;
+    margin-left: 193px;
+}
+#close_button{
+    margin-left: 180px;
+    float: left;
+    border: none;
+    background-color: white;
+}
+#close{
+    width: 40px;
 }
 #role{
+    clear: left;
     margin-top: 10px;
     width: 480px;
     height: 80px;
     box-shadow: 1px 1px 8px grey;
     border-radius: 35px;
 }
+#role_tag{
+    float: left;
+    margin-top: 17.5px;
+    margin-left: 16px;
+    display: block;
+    text-align: center;
+    background-color: rgb(0,161,255);
+    width: 80px;
+    height: 45px;
+    border-radius: 20px;
+    padding-top: 3px;
+}
+#role_text{
+    float: left;
+    color: black;
+
+    margin-top: 20px;
+    margin-left: 25px;
+    font-size: 16px;
+    text-align: center;
+}
+
 #techStack{
-    margin-top: 12px;
-    width: 480px;
-    height: 150px;
+    float: left;
+    margin-top: 20px;
+    width: 230px;
+    height: 300px;
     box-shadow: 1px 1px 8px grey;
     border-radius: 50px;
     padding-top: 12px;
 }
+#techStack>img{
+    margin-left: 25px;
+    margin-top: 25px;
+    width: 180px;
+}
 #experience{
-    margin-top: 12px;
-    width: 480px;
-    height: 143px;
+    margin-left: 20px;
+    float: left;
+    margin-top: 20px;
+    width: 230px;
+    height: 300px;
     box-shadow: 1px 1px 8px grey;
     border-radius: 50px;
     padding-top: 12px;
+}
+#ex_list{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+#ex_elem>p{
+    font-size: 20px;
+    color: black;
+    margin-top: 30px;
 }
 #detail_head{
     margin-top: 0px;
@@ -367,11 +437,24 @@
 }
 #members > li > p{
     font-size: 18px;
-    
     color: rgb(154, 154, 154);
 }
 #members>li>h3:hover .caption{
     color: #007AFF !important;
+}
+#more{
+    width: 80px;
+    height: 30px;
+    background-color: #007AFF;
+    border: none;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+#more>p{
+    margin-top: 2px;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 
