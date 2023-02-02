@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+#blank{
+    height: 300px;
+}
 #about{
     padding: 0 auto;
     clear: both;
@@ -12,6 +14,7 @@
     background-color: black;
 }
 #intro_category{
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     padding-top: 100px;
@@ -20,26 +23,45 @@
     background-color: black;
 }
 #intro_category>h1{
-    padding-top: 50px;
-    font-size: 150px;
+    padding-top: 5vh;
+    font-size: 20vh;
+
     text-align: left;
     font-style: italic;
 }
 #intro{
-    color: rgb(163, 163, 163);
-    margin-top: 50px;
-    font-size: 100px;
+    margin-top: 5vh;
+    background: linear-gradient(to right top, #116030, #99f88a);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 14vh;
     text-align: right;
 }
 #down{
+    position: absolute;
     text-align: center;
     font-size: 20px;
-    margin-top: 120px;
+    margin-top: 27vh;
+    left: 525.5px;
+    bottom: 60px;
+    font-weight: bold;
+}
+@keyframes down_ani {
+    from {
+        transform: translate(0,0);
+    }
+    to {
+        transform: translate(0,10px);
+    }
 }
 #intro_category>img{
+    position: absolute;
     display: block;
     margin: 0 auto;
     width: 30px;
+    left: 585px;
+    bottom: 25px;
+    animation: down_ani 0.5s infinite alternate;
 }
 
 #name_intro{
@@ -50,6 +72,9 @@
     background-color: black;
 }
 #head{
+    opacity: 0;
+    transition: all 2s;
+    transition-delay: 0.5s;
     padding-top: 110px;
     font-size: 80px;
     text-align: center;
@@ -66,14 +91,29 @@
     font-size: 130px;
     font-style: italic;
 }
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
 #fullName{
     float: left;
     margin-top: 80px;
     font-size: 40px;
     color: mediumspringgreen;
+    position: relative;
+    /* display: block; */
+    animation: fadeInRight 2s;
 
     /* font-style: italic; */
 }
+
+
 #introduction{
     float: right;
     font-size: 30px;
@@ -460,7 +500,7 @@
 
 #method_category{
     text-align: center;
-    height: 300px;
+    height: 800px;
 }
 #method_category>h2{
     font-size: 40px;

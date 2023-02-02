@@ -40,6 +40,9 @@
                 <p id="down">밑에서 확인하세요!</p>
                 <img src="IMAGE/arrow.png">
             </div>
+            <div id="blank">
+
+            </div>
             <div id="name_intro">
                 <h1 id="head">SPC 란?</h1>
                 <ul id="name">
@@ -59,6 +62,9 @@
                         <p id="introduction">좆목질 하기</p>
                     </li>
                 </ul>
+            </div>
+            <div id="blank">
+                
             </div>
             <div id="work_intro">
                 <h1 id="head">우리가 하는 일!</h1>
@@ -298,9 +304,11 @@
                     </li>
                 </ul>
             </div>
-            
+            <div id="blank">
+                
+            </div>
             <div id="method_category">
-                <h2>공부 방식</h2>
+                <h1 id="head">공부 방식</h1>
                 <p id="study">
                     막강한 성능의 M2 Pro 또는 M2 Max 덕분에 그 어느 때보다 높은 차원의 힘과 효율성을 발휘하는 <br>MacBook Pro. <br>
                     전원에 연결했을 때나 그렇지 않을 때나 탁월한 성능을 선사하고, 더욱더 긴 배터리 사용 시간을 자랑하죠. <br>
@@ -350,6 +358,22 @@
         function changeButtonColor_more(){
             document.querySelector('#more').style.backgroundcolor="#004793";
         }
+        let observer=new IntersectionObserver((e)=>{
+            e.forEach((head)=>{
+                if(head.isIntersecting){
+                    head.target.style.opacity=1;
+                }else{
+                    head.target.style.opacity=0;
+                }
+                
+            })
+        })
+        let h1 = document.querySelectorAll('#head');
+        observer.observe(h1[0]);
+        observer.observe(h1[1]);
+        observer.observe(h1[2]);
+        observer.observe(h1[3]);
+        observer.observe(h1[4]);
     </script>
 </body>
 </html>
